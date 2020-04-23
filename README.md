@@ -13,6 +13,7 @@ We did a very simple translation from X and Y coordinates to latitude and longit
 Add new columns in Panda so the court is evenly displayed
 
 After adding lat and lon, we then uploaded the data to CartoDB. Then it was time to display it in Leaflet.
+Aiming to add interactive hovertools to portray every shot's statistic. 
 	
 	cartodb.createLayer(mapchart, {
 	    id:"6eadec2c-0204-11e6-865f-0e674067d321",
