@@ -31,16 +31,6 @@ After adding lat and lon, we then uploaded the data to CartoDB. Then it was time
     
     cartodb.createLayer is a method of cartodb.js that lets you quickly create a leaflet layer from a CartoDB dataset. It uses CartoCSS for styling. Here's an example of that:
 
-	var cssString = "#kobe_all_shots_geocoded_final_merge{\
-	    marker-fill-opacity: 0.4;\
-	    marker-line-color: #FFF;\
-	    marker-line-width: 1;\
-	    marker-line-opacity: 0;\
-	    marker-placement: point;\
-	    marker-type: ellipse;\
-	    marker-width: 10;\
-	    [event_type = 'Made Shot']{\
-	        marker-fill: #6a3a89;\
 	    }\
 	      [event_type = 'Missed Shot']{\
 	        marker-fill: #F5D05E;\
