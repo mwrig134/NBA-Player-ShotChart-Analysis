@@ -9,6 +9,6 @@ TASKS LIST
 - [x] build NBA court background (Aaron)
 - [x] plot shots (Muneeb)
 - [x] Add legend (Muneeb)
-- [ ] Add Title to chart (Muneeb)
+- [x] Add Title to chart (Muneeb)
 - [ ] add interactive hovertools to show shot details (Muneeb)
 
