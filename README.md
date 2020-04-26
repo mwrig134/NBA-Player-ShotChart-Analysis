@@ -1,5 +1,7 @@
 # NBA-Player-ShotChart-Analysis
 
+Please see Kobe Every Shot Ever-checkpoint.ipynb for code. Original file was compromised.
+
 This graphic shows a complete collection of all shot attempts by NBA Superstar, Kobe Bryant.
 
 The inspiration for this project comes from this LA Times graphic: https://graphics.latimes.com/kobe-every-shot-ever/
