@@ -11,4 +11,4 @@ TASKS LIST
 - [x] Add legend (Muneeb)
 - [x] Add Title to chart (Muneeb)
 - [ ] add interactive hovertools to show shot details (Muneeb)
-
+- [ ] add tool for and made jumpshots when fouled(Marcus)
