@@ -54,3 +54,37 @@ Aiming to add interactive hovertools to portray every shot's statistic.
 	}";
   
   The newest addition for this would need to be so that a user can go through and see a "drop down" list without clicking, while just hovering their mouse.
+  
+  # plot all the shots
+sns.set_style("white")
+sns.set_color_codes()
+all_shot_fig = plt.figure(figsize=(25,47),dpi=72)
+all_shot_ax = all_shot_fig.add_subplot(111)
+
+all_shot_ax.set_ylim([-100,840])
+all_shot_ax.set_xlim([250,-250])
+
+draw_court(ax=all_shot_ax,outer_lines=True)
+
+# First, draw the missed shots
+miss = all_shot_ax.scatter(kobe_all_shots[
+        (kobe_all_shots.EVENT_TYPE == "Missed Shot")
+    ].LOC_X,
+    kobe_all_shots[
+        (kobe_all_shots.EVENT_TYPE == "Missed Shot")
+    ].LOC_Y,color='#d8b055',alpha=0.5, label = "Missed Shot")
+
+
+# Then the made shots
+make = all_shot_ax.scatter(kobe_all_shots[
+        (kobe_all_shots.EVENT_TYPE == "Made Shot")
+    ].LOC_X,
+    kobe_all_shots[
+        (kobe_all_shots.EVENT_TYPE == "Made Shot")
+    ].LOC_Y,color='#6a3a89',alpha=0.5, label = "Made Shot")
+
+# Add a legend to distinguish Made from Missed Shots
+all_shot_fig.legend(loc='center right', fontsize='xx-large', markerscale=2)
+
+plt.title("Kobe Career Shot Attempts" , fontdict = {'fontsize': 80})
+#all_shot_fig.savefig('kobeshotchart.svg')
